@@ -1,0 +1,602 @@
+/* Applying Google Font */
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+}
+
+/* Styling Menu Icon */
+nav-menu {
+    border: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+
+/* Styling Navbar Links */
+.navbar-nav a {
+    color: black;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav a:hover {
+    color: #fca61f;
+}
+
+.navbar-nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #fca61f;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Styling Contact Button */
+.c-btn {
+    border: none;
+    background: #fca61f;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.c-btn:hover {
+    background: #e5941b;
+}
+
+/* Styling Home Section */
+.home {
+    background: linear-gradient(33deg, rgba(242, 242, 255, 1) 0%, rgba(235, 249, 255, 1) 100%);
+    padding: 0;
+}
+
+.home h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.c-orange {
+    color: #6f34fe;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.home p {
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.h-btn:hover {
+    background: #6f34fe;
+    color: #fff;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fca61f;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #6f34fe;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #6f34fe;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Adding Animation to Home Section Image */
+.home img {
+    animation: floatimg 4s ease-in-out infinite, fadeIn 2s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Expertise Section */
+.heading small {
+    color: #6f34fe;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.heading h3 {
+    margin-top: 0.5rem;
+    color: #3f396d;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.expertise h4 {
+    color: #3f396d;
+    font-weight: 700;
+}
+
+.expertise a {
+    text-decoration: none;
+    color: #fca61f;
+    transition: color 0.3s ease;
+}
+
+.expertise a:hover {
+    color: #6f34fe;
+}
+
+.expertise .service-card {
+    text-align: center;
+    padding: 15px;
+    border-radius: 0.7rem;
+}
+
+/* Skills Section */
+.skill {
+    background-color: rgb(234, 234, 249);
+}
+
+.progress-card {
+    padding: 12% 10% 10% 15%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10%;
+    transition: transform 0.6s ease;
+}
+
+.progress-card:hover {
+    transform: scale(1.1);
+}
+
+.circular-progress {
+    position: relative;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.progress-value {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Portfolio Section */
+#myBtnContainer {
+    margin-bottom: 45px;
+}
+
+#myBtnContainer button {
+    border: none;
+    color: black;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+#myBtnContainer button:hover {
+    color: #fca61f;
+}
+
+.post .content h4 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.post .card {
+    border: none;
+}
+
+/* Testimonial Section */
+.testimonial img:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.testimonial h4 {
+    color: #3f396d;
+}
+
+.testimonial i {
+    font-size: 2.9rem;
+    color: #fca61f;
+}
+
+.testimonial .nextprev-btn {
+    border: none;
+    background-color: #fff;
+}
+
+.prev:hover,
+.prev-btn:hover,
+.next:hover,
+.next-btn:hover {
+    color: #6f34fe;
+    transition: transform 1s ease;
+}
+
+.prev:hover {
+    transform: translateX(-10px);
+}
+
+.next:hover {
+    transform: translateX(10px);
+}
+
+/* Blog Section */
+.blog {
+    background-color: #f2f2ff;
+}
+
+.blog .blogpost .card {
+    border: none;
+    border-radius: 5%;
+}
+
+.blog .blogpost small {
+    color: #6f34fe;
+    font-size: 1.1rem;
+}
+
+.blog .blogpost h4,
+.blogpost a {
+    color: #3f396d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.blogpost a:hover {
+    color: #fca61f;
+}
+
+.blog .blogpost .read-more-btn {
+    text-decoration: none;
+    color: #fca61f;
+    font-size: 1.1rem;
+}
+
+.blog .blogpost .read-more-btn:hover {
+    color: #6f34fe;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f3f3f3;
+}
+
+.contact-details i {
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+
+.contact-details p {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+/* Footer Section */
+footer {
+    background-color: #211e39;
+}
+
+footer .link-group a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+
+footer .link-group a:hover {
+    color: #fca61f;
+}
+
+/* Back to Top Button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    font-size: 1.4rem;
+    background-color: #fca61f;
+    color: #fff;
+    animation: pulse 3s infinite;
+}
+.one{
+    text-decoration: none;
+}
+.two{
+    text-decoration: none;
+}
+
+.three{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+
+    /* Adjusting the navbar */
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav a {
+        padding: 10px 0;
+        font-size: 1.2rem;
+    }
+
+    /* Making the home section text center-aligned */
+    .home {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+
+    .c-orange {
+        font-size: 3rem;
+    }
+
+    /* Adjusting buttons */
+    .c-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    /* Responsive portfolio buttons */
+    #myBtnContainer button {
+        font-size: 1rem;
+        margin: 10px;
+    }
+
+    /* Center-align text in expertise section */
+    .expertise {
+        text-align: center;
+    }
+
+    .expertise h4 {
+        font-size: 1.5rem;
+    }
+
+    /* Responsive skill cards */
+    .progress-card {
+        padding: 8%;
+        border-radius: 8%;
+    }
+
+    .circular-progress {
+        height: 100px;
+        width: 100px;
+    }
+
+    .progress-value {
+        font-size: 1.2rem;
+    }
+
+    /* Blog section adjustments */
+    .blog .blogpost .card {
+        margin-bottom: 20px;
+    }
+
+    /* Contact section */
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details p {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .link-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-group a {
+        margin: 5px 0;
+    }
+
+    /* Back to Top Button */
+    #btn-back-to-top {
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Adjusting skill section layout */
+    .skill {
+        padding: 20px;
+    }
+
+    .skill .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-card {
+        width: 80%;
+        padding: 15px;
+        margin-bottom: 20px;
+        /* Adds spacing between boxes */
+        border-radius: 10px;
+    }
+
+    /* Adjust skill meter size */
+    .circular-progress {
+        height: 100px;
+        width: 100px;
+    }
+
+    .circular-progress::before {
+        height: 90px;
+        width: 90px;
+    }
+
+    .progress-value {
+        font-size: 1.3rem;
+    }
+
+    /* Center text below meter */
+    .text {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 10px;
+        /* Adds space between meter and text */
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center everything horizontally */
+        text-align: center;
+        /* Center the text */
+    }
+
+    .contact-details .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center align each row */
+        margin-bottom: 15px;
+        /* Space between rows */
+    }
+
+    .contact-details i {
+        font-size: 1.8rem;
+        /* Increase icon size */
+        color: #fca61f;
+        /* Match theme color */
+        margin-bottom: 8px;
+        /* Space between icon and text */
+    }
+
+    .contact-details p {
+        font-size: 1.1rem;
+        margin: 0;
+        /* Remove unwanted margins */
+    }
+
+    /* Ensuring proper width for smaller screens */
+    .contact-details .col-1,
+    .contact-details .col-11 {
+        width: 100%;
+        /* Make them take full width */
+        text-align: center;
+        /* Center the text */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Centers everything horizontally */
+        text-align: center;
+        /* Centers the text inside inputs */
+        width: 100%;
+    }
+
+    .contact-form .mb-3 {
+        width: 90%;
+        /* Makes input fields take 90% of the screen width */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        /* Ensures inputs take full width inside the form */
+        text-align: center;
+        /* Center text inside the inputs */
+    }
+
+    .contact-form button {
+        display: block;
+        width: 90%;
+        /* Button width matches input fields */
+        text-align: center;
+    }
+}
