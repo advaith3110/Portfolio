@@ -75,6 +75,7 @@ body {
     background: linear-gradient(33deg,
             rgba(242, 242, 255, 1) 0%,
             rgba(235, 249, 255, 1) 100%);
+
     padding: 40px 0;
 }
 
@@ -183,6 +184,25 @@ body {
     transform: translateY(-10px);
 }
 
+/* Expertise Icons */
+.expertise-icon {
+    width: 70px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.expertise-icon:hover {
+    transform: scale(1.08);
+}
+
+.hero-img {
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+}
+
 /* =========================================
    Skills Section
 ========================================= */
@@ -236,6 +256,24 @@ body {
     font-weight: 500;
     margin-top: 10px;
     display: block;
+}
+
+/* Skill Right Side Content Center */
+.skill-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skill-detail .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-detail .c-btn {
+    margin-top: 20px;
 }
 
 /* =========================================
@@ -388,129 +426,261 @@ footer .link-group a:hover {
 /* =========================================
    Responsive Design
 ========================================= */
+/* =========================================
+   Extra Responsive Improvements
+========================================= */
+
+/* Large Tablets */
+@media screen and (max-width: 992px) {
+
+    .home h2 {
+        font-size: 2.5rem;
+        line-height: 3.3rem;
+    }
+
+    .c-orange {
+        font-size: 3.2rem;
+    }
+
+    .skill-detail {
+        margin-top: 40px;
+    }
+
+    .progress-card {
+        margin-bottom: 25px;
+    }
+
+    .post .card img {
+        height: 200px;
+    }
+
+    .heading h3 {
+        font-size: 2.2rem;
+    }
+
+}
+
+/* Tablets & Mobile */
 @media screen and (max-width: 768px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
     .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        background: #fff;
+        padding: 15px 0;
     }
 
     .navbar-nav a {
-        padding: 10px 0;
-        font-size: 1.1rem;
+        padding: 12px 0;
     }
 
     .home {
         text-align: center;
-        padding: 30px 20px;
+        padding: 50px 20px;
+    }
+
+    .home img {
+        width: 85%;
+        margin-top: 30px;
     }
 
     .home h2 {
-        font-size: 2.3rem;
-        line-height: 3rem;
-    }
-
-    .home p {
-        font-size: 1rem;
+        font-size: 2rem;
+        line-height: 2.8rem;
     }
 
     .c-orange {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
-    .c-btn {
-        font-size: 1rem;
-        padding: 10px 18px;
+    .heading h3 {
+        font-size: 2rem;
     }
 
-    #myBtnContainer button {
-        font-size: 1rem;
-        margin: 10px;
+    .expertise .service-card {
+        margin-bottom: 25px;
     }
 
-    .expertise {
-        text-align: center;
-    }
-
-    .expertise h4 {
-        font-size: 1.4rem;
+    .skill-detail {
+        margin-top: 40px;
+        padding: 0 10px;
     }
 
     .progress-card {
-        width: 100%;
-        padding: 20px;
         margin-bottom: 20px;
     }
 
     .circular-progress {
-        height: 100px;
-        width: 100px;
+        height: 110px;
+        width: 110px;
     }
 
     .circular-progress::before {
+        height: 90px;
+        width: 90px;
+    }
+
+    .portfolio .card {
+        margin-bottom: 25px;
+    }
+
+    .post .card img {
+        height: 180px;
+    }
+
+    #myBtnContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #myBtnContainer button {
+        margin: 8px;
+    }
+
+    .contact-form {
+        margin-top: 30px;
+    }
+
+    footer .link-group {
+        margin-top: 15px;
+    }
+
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 576px) {
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .home h2 {
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+    }
+
+    .c-orange {
+        font-size: 2.3rem;
+    }
+
+    .home p {
+        font-size: 0.95rem;
+    }
+
+    .heading small {
+        font-size: 1.1rem;
+    }
+
+    .heading h3 {
+        font-size: 1.7rem;
+    }
+
+    .expertise h4 {
+        font-size: 1.2rem;
+    }
+
+    .expertise p {
+        font-size: 0.95rem;
+    }
+
+    .progress-card {
+        padding: 15px;
+    }
+
+    .circular-progress {
+        height: 95px;
+        width: 95px;
+    }
+
+    .circular-progress::before {
+        height: 78px;
+        width: 78px;
+    }
+
+    .progress-value {
+        font-size: 1rem;
+    }
+
+    .text {
+        font-size: 0.9rem;
+    }
+
+    .skill-detail p {
+        font-size: 0.95rem;
+    }
+
+    .c-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .post .card img {
+        height: 160px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .contact-details p {
+        font-size: 0.95rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    .social-links button {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+/* Ultra Small Devices */
+@media screen and (max-width: 400px) {
+
+    .home h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .c-orange {
+        font-size: 2rem;
+    }
+
+    .heading h3 {
+        font-size: 1.5rem;
+    }
+
+    .circular-progress {
         height: 85px;
         width: 85px;
     }
 
+    .circular-progress::before {
+        height: 70px;
+        width: 70px;
+    }
+
     .progress-value {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 
     .text {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
 
-    .contact-details {
-        text-align: center;
+    .c-btn {
+        font-size: 0.9rem;
+        padding: 10px;
     }
 
-    .contact-details .row {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .contact-details i {
-        margin-bottom: 8px;
-    }
-
-    .contact-details p {
-        margin-left: 0;
-    }
-
-    .contact-form {
-        text-align: center;
-    }
-
-    .contact-form .mb-3 {
-        width: 100%;
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-    }
-
-    .link-group {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .link-group a {
-        margin: 5px 0;
-    }
-
-        .expertise-icon {
-            width: 70px;
-            object-fit: contain;
-            margin-bottom: 15px;
-        }
-
-    #btn-back-to-top {
-        bottom: 20px;
-        right: 20px;
-        font-size: 1.1rem;
-    }
 }

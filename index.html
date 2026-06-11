@@ -40,7 +40,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
     <!-- Favicon -->
-    <link rel="icon" href="images/portfolio.png" type="image/png" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
@@ -128,12 +128,8 @@
             </a>
           </div>
 
-          <div class="col-10 col-md-4 d-none d-md-block">
-            <img
-              src="images/me-2.png"
-              class="img-fluid"
-              alt="Advait Hegde"
-            />
+          <div class="col-lg-4 col-md-5 d-none d-md-flex justify-content-center align-items-end">
+            <img src="images/me-2.png" class="hero-img" alt="Advaith Hegde">
           </div>
         </div>
       </div>
@@ -265,97 +261,106 @@
   </div>
 </section>
 
-    <!-- Skills Section -->
-    <section class="skill mt-5 py-5" id="about">
-      <div class="container">
-        <div class="row justify-content-evenly">
-          <!-- Skill Progress -->
-          <div
-            class="col-10 col-md-7 skill-with-progress"
-            data-aos="slide-right"
-          >
-            <div class="row justify-content-center g-4">
-              <div class="col-10 col-md-4">
-                <div class="progress-card text-center">
-                  <div class="circular-progress html-css">
-                    <span class="progress-value">80%</span>
-                  </div>
+<!-- =========================
+     Skills Section
+========================= -->
+<section class="skill mt-5 py-5" id="about">
+  <div class="container">
+    <div class="row justify-content-evenly align-items-center">
 
-                  <span class="text">HTML & CSS</span>
-                </div>
+      <!-- Skill Progress -->
+      <div class="col-10 col-md-7 skill-with-progress" data-aos="slide-right">
+
+        <div class="row justify-content-center g-4">
+
+          <!-- Linux -->
+          <div class="col-10 col-md-4">
+            <div class="progress-card text-center">
+
+              <div class="circular-progress html-css">
+                <span class="progress-value linux-progress">85%</span>
               </div>
 
-              <div class="col-10 col-md-4">
-                <div class="progress-card text-center">
-                  <div class="circular-progress javascript">
-                    <span class="progress-value">75%</span>
-                  </div>
+              <span class="text">Linux</span>
 
-                  <span class="text">JavaScript</span>
-                </div>
-              </div>
-
-              <div class="col-10 col-md-4">
-                <div class="progress-card text-center">
-                  <div class="circular-progress reactjs">
-                    <span class="progress-value">78%</span>
-                  </div>
-
-                  <span class="text">ReactJS</span>
-                </div>
-              </div>
             </div>
           </div>
 
-          <!-- Skill Details -->
-          <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-            <div class="heading mt-5 mt-md-3">
-              <small>My Skills</small>
+          <!-- Docker -->
+          <div class="col-10 col-md-4">
+            <div class="progress-card text-center">
 
-              <h3>Secure Infrastructure & Automation</h3>
+              <div class="circular-progress javascript">
+                <span class="progress-value javascript-progress">80%</span>
+              </div>
 
-                <p class="text-muted">
-                  Passionate about DevSecOps, cloud infrastructure,
-                  automation, and cybersecurity with hands-on
-                  experience in Linux, Docker, Kubernetes,
-                  CI/CD pipelines, and security monitoring.
-                </p>
+              <span class="text">Docker</span>
 
-                <p class="text-muted">
-                  Focused on building scalable and secure systems
-                  using cloud technologies, infrastructure automation,
-                  container orchestration, and monitoring tools.
-                </p>
-
-              <a
-                href="https://github.com/advaith3110/Resumes/blob/main/Advaith%20Hegde-Resume-7.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-decoration-none"
-              >
-                <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-                  Download CV
-                </button>
-              </a>
             </div>
           </div>
+
+          <!-- Kubernetes -->
+          <div class="col-10 col-md-4">
+            <div class="progress-card text-center">
+
+              <div class="circular-progress reactjs">
+                <span class="progress-value reactjs-progress">72%</span>
+              </div>
+
+              <span class="text">Kubernetes</span>
+
+            </div>
+          </div>
+
         </div>
       </div>
-    </section>
+
+      <!-- Skill Details -->
+      <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+
+        <div class="heading text-center">
+
+          <small>My Skills</small>
+
+          <h3>
+            Secure Infrastructure & Automation
+          </h3>
+
+          <p class="text-muted mt-3">
+            Passionate about DevSecOps, cloud infrastructure,
+            automation, and cybersecurity with hands-on
+            experience in Linux, Docker, Kubernetes,
+            CI/CD pipelines, and security monitoring.
+          </p>
+
+          <p class="text-muted">
+            Focused on building scalable and secure systems
+            using cloud technologies, infrastructure automation,
+            container orchestration, and monitoring tools.
+          </p>
+
+          <a href="https://github.com/advaith3110/Resumes/blob/main/Advaith%20Hegde-Resume-7.pdf" target="_blank"
+            rel="noopener noreferrer" class="text-decoration-none">
+
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Download CV
+            </button>
+
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- Portfolio -->
     <section class="portfolio py-5" id="portfolio">
       <div class="heading text-center">
         <small>Creative Work</small>
 
-        <h3>Portfolio</h3>
-      </div>
-
-      <div id="myBtnContainer" class="text-center mt-4">
-        <button class="filter-item">All</button>
-        <button class="filter-item">DevOps</button>
-        <button class="filter-item">Cloud Security</button>
-        <button class="filter-item">Cybersecurity</button>
+        <h3>Portfolio Projects</h3>
       </div>
 
       <div class="container">
@@ -367,9 +372,8 @@
           >
             <div class="card">
               <img
-                src="images/piceditor.png"
+                src="images/Secure-CI-CD-Pipeline.png"
                 class="card-img-top"
-                alt="PicEditor App"
               />
 
               <div class="card-body text-center">
@@ -396,9 +400,8 @@
           >
             <div class="card">
               <img
-                src="images/dictionary.png"
+                src="images/kubernetes-security.png"
                 class="card-img-top"
-                alt="Dictionary App"
               />
 
               <div class="card-body text-center">
@@ -422,10 +425,9 @@
           >
             <div class="card">
               <img
-                src="images/tic-tac-toe.jpeg"
+                src="images/SOC-Monitoring-Lab.png"
                 class="card-img-top"
-                alt="Tic Tac Toe"
-              />
+              >
 
               <div class="card-body text-center">
                 <h4 class="card-title">SOC Monitoring Lab</h4>
@@ -466,8 +468,10 @@
 
               <div class="col-11">
                 <p>
-                  Flat No.406, Anannya Apartments, Behind Empire Mall,
-                  Kodialbail, Mangalore
+                  Seetaram #498/16,
+                  2nd Cross Road, Anjanappa Layout, Adarsh
+                  Nagar, Arasinakunte, Bangalore Rural,
+                  Karnataka - 562123
                 </p>
               </div>
             </div>
@@ -563,7 +567,7 @@
 
     <!-- Footer -->
     <footer class="text-center text-muted py-4">
-      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio projects</h3>
 
       <div class="link-group mt-5" data-aos="fade-up">
         <a href="#home">Home</a>
@@ -583,13 +587,13 @@
 
       <div class="social-links mt-5" data-aos="fade-up">
         <a
-          href="https://www.instagram.com/iamadvaith56/"
+          href="https://www.linkedin.com/in/advait-hegde-4a79031bb/"
           target="_blank"
           rel="noopener noreferrer"
           class="me-2"
         >
           <button class="rounded-pill dribble">
-            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
           </button>
         </a>
 
